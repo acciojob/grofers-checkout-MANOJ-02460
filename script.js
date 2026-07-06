@@ -4,7 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-let pricesElement = document.querySelectorAll(".price");
+let pricesElement = document.querySelectorAll(".prices");
 let totalSum = 0;
 
 pricesElement.forEach((element)=>{
@@ -20,6 +20,7 @@ let newCell = document.createElement("td");
 
 newCell.textContent = `Total: ${totalSum}`;
 newCell.setAttribute("id","ans");
+newCell.setAttribute("colspan",'2');
 
 
 row.appendChild(newCell);
